@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+}
+
+/**{
+    border: 0.1px solid red;
+}*/
+
+body{
+    background:url(https://i.imgur.com/RZi9R2S.jpg?1);
+    background-size: 1200px;
+    font-family: helvetica;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    margin:10vw;
+    box-shadow: 2px 2px 9px black;
+    border-radius: 20px;
+}
+
+
+.title{
+    color: #fff;
+    padding-top:20px;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px black;
+}
+
+.quote{
+    color: black;
+    quotes: "“" "”" "‘" "’";
+    padding:10px;
+}
+
+.quote:before {
+    content: open-quote;
+    font-size: 30px;
+    font-weight: 700;
+}
+.quote:after {
+    content: close-quote;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.tweet{
+    color: #1DA1F2;
+    font-size: 45px;
+    align-self: center;
+    text-shadow:1px 1px 0px #07526e
+}
+
+.tweet:hover{
+    text-shadow: 1px 0px 2px black;
+}
+
+.button {
+  margin: 20px;
+  font-size:20px;
+  color:#fff;
+  text-shadow:1px 1px 0px #07526e;
+  padding:10px;
+  cursor:pointer;
+  border: none;
+  background: #1DA1F2;
+  background-image: linear-gradient(bottom, rgb(14,137,182) 0%, rgb(22,179,236) 100%);
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e, 0px 10px 5px #999;
+}
+
+.button:hover{
+    opacity: 0.9;
+}
+
+.button:active {
+  top:3px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e, 0px 5px 3px #999;
+}
+
+
+@media screen and (min-width: 900px){
+    body{
+        background-size: 1300px;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    body{
+        background-size: 1700px;
+    }
+}
